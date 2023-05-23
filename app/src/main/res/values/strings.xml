@@ -4,4 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lista_de_bancos">Lista de Bancos</string>
     <string name="nombre">Nombre:</string>
+    <string name="informaci_n_del_banco">Información del banco</string>
+    <string name="pais_de_origen">País de origen:</string>
+    <string name="creacion_de_banco">Creación de banco</string>
+    <string name="submit">Submit</string>
 </resources>

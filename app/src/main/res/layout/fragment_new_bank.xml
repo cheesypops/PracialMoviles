@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Creación de banco"
+            android:text="@string/creacion_de_banco"
             android:layout_marginTop="@dimen/big_gap"
             android:layout_marginBottom="@dimen/big_gap"
             android:textAlignment="center"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/big_gap"
-            android:text="Submit"
+            android:text="@string/submit"
             android:textSize="@dimen/medium_size"/>
 
     </LinearLayout>
