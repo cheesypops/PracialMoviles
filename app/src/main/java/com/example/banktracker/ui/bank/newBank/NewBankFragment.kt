@@ -32,6 +32,7 @@ class NewBankFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //llamar las funciones previamente creadas
         setviewModel()
         setObserver()
     }
