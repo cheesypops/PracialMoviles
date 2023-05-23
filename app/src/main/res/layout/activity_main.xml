@@ -7,6 +7,7 @@
     tools:context=".ui.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
+        android:padding="@dimen/medium_gap"
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
