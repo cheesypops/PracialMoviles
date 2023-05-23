@@ -40,7 +40,7 @@ class BankListFragment : Fragment() {
 
         setRecyclerView(view)
 
-        binding.actionToCreateMovie.setOnClickListener(){
+        binding.actionToCreateBank.setOnClickListener(){
             bankViewModel.clearData()
             it.findNavController().navigate(R.id.action_bankListFragment_to_newBankFragment)
         }

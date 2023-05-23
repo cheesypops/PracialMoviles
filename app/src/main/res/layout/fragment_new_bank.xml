@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".ui.bank.newBank.NewBankFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.banktracker.ui.bank.bankViewModel.BankViewModel" />
+    </data>
 
-</FrameLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Creación de banco"
+            android:layout_marginTop="@dimen/big_gap"
+            android:layout_marginBottom="@dimen/big_gap"
+            android:textAlignment="center"
+            android:textSize="@dimen/big_size"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textColorHint="@color/black"
+            android:text="@={viewModel.name}"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/big_gap"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/medium_size"
+            android:layout_marginLeft="@dimen/medium_gap"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:padding="@dimen/medium_gap"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pais de origen"
+            android:textColorHint="@color/black"
+            android:text="@={viewModel.country}"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/big_gap"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/medium_size"
+            android:layout_marginLeft="@dimen/medium_gap"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:padding="@dimen/medium_gap"
+            android:textColor="@color/black"/>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:onClick="@{() -> viewModel.createBank()}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_gap"
+            android:text="Submit"
+            android:textSize="@dimen/medium_size"/>
+
+    </LinearLayout>
+
+</layout>
