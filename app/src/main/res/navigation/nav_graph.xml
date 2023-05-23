@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bankListFragment">
+
+    <fragment
+        android:id="@+id/bankListFragment"
+        android:name="com.example.banktracker.ui.bank.bankList.BankListFragment"
+        android:label="fragment_bank_list"
+        tools:layout="@layout/fragment_bank_list" >
+        <action
+            android:id="@+id/action_bankListFragment_to_bankInfoFragment"
+            app:destination="@id/bankInfoFragment" />
+        <action
+            android:id="@+id/action_bankListFragment_to_newBankFragment"
+            app:destination="@id/newBankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankInfoFragment"
+        android:name="com.example.banktracker.ui.bank.bankInfo.BankInfoFragment"
+        android:label="fragment_bank_info"
+        tools:layout="@layout/fragment_bank_info" />
+    <fragment
+        android:id="@+id/newBankFragment"
+        android:name="com.example.banktracker.ui.bank.newBank.NewBankFragment"
+        android:label="fragment_new_bank"
+        tools:layout="@layout/fragment_new_bank" />
+</navigation>
